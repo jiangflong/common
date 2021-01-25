@@ -1,0 +1,29 @@
+
+# 服务名称
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://www.dilipeihu.xyz:3306/dili?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8&useSSL=true&zeroDateTimeBehavior=convertToNull
+    username: kebangadmin
+    password: j2ck0VejicmgiZDiasdf234vgf_sdfsfrjnvyu_
+    type: com.zaxxer.hikari.HikariDataSource
+    hikari:
+      auto-commit: true
+      minimum-idle: 10
+      idle-timeout: 60000
+      connection-timeout: 30000
+      max-lifetime: 1800000
+      pool-name: DatebookHikariCP
+      maximum-pool-size: 15
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+server:
+  port: 20000
+
+logging:
+  level:
+    com.dili.common.mapper: debug
+baby:
+  security:
+    secret: 60 * 60 * 24 * 10 #单位为秒 设置过期时间10天
+    token-expired-in: my_secret_kebang9asdf7as9df892344264rf9zs4dvf_2384)_&)@*(#+_@($$)*()$Y*(HNL!#MBN&(HY!UB$JK@(+)$UJ_ML<$%PU*I_2020_8_19
