@@ -1,7 +1,7 @@
 package cn.feilong.common.config;
 
 public  class AuthConfig {
-    public final static String TOKEN_HEADER = "token"; //#
+    public final static String TOKEN_HEADER = "token"; //#1
     public final static String ROLE_ADMIN = "ADMIN";   // 管理员角色名 "admin"
 
     public enum RoleConfig{
